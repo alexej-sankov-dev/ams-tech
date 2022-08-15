@@ -11,17 +11,17 @@ const Footer = () => {
 
   const handleClickServ = () => {
     navigate('/')
-    document.getElementById('services')?.scrollIntoView()
+    document.getElementById('services').scrollIntoView()
   }
 
   const handleClickProj = () => {
       navigate('/')
-      document.getElementById('projects')?.scrollIntoView()
+      document.getElementById('projects').scrollIntoView()
   }
 
   const handleClickAbout = () => {
       navigate('/')
-      document.getElementById('about')?.scrollIntoView()
+      document.getElementById('about').scrollIntoView()
   }
 
 
