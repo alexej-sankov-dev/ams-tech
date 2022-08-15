@@ -1,0 +1,115 @@
+.projects {
+    font-family: 'Poppins', sans-serif;
+
+    //column-gap: calc(var(--baseline) * 4);
+    //row-gap: calc(var(--baseline) *4);
+    //grid-template-columns: calc((100% - var(--grid-size)) / 2) 1fr 1fr 3fr 2fr 3fr 1fr 1fr calc((100% - var(--grid-size)) / 2);
+    //margin: auto;
+    //display: grid;
+    //align-items: center;
+
+    //margin-bottom: 90px;
+    //grid-auto-rows: minmax(100px, auto);
+    //--unit: max(10px,min(calc((100vw - var(--scrollbar-width))*0.00781 + 10px),25px));
+
+}
+
+.projects-heading {
+    display: grid;
+    grid-template-columns: calc((100% - var(--grid-size)) / 2) 1fr 12fr 1fr calc((100% - var(--grid-size)) / 2);
+    margin: auto;
+    align-items: center;
+    max-width: 2000px;
+    column-gap: calc(var(--baseline) * 4);
+    row-gap: calc(var(--baseline) *4);
+}
+
+.heading-text {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.project-item {
+    column-gap: calc(var(--baseline) * 4);
+    row-gap: calc(var(--baseline) *4);
+    grid-template-columns: calc((100% - var(--grid-size)) / 2) 1fr 1fr 3fr 2fr 3fr 1fr 1fr calc((100% - var(--grid-size)) / 2);
+    grid-template-rows: 80vh;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+.project-image {
+    z-index: -1;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+}
+
+.image-container {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    background-color: rgba(157, 157, 244, 0.2);
+    border-radius: 40px;
+
+
+    img {
+        margin: 50px;
+        border: 0;
+        object-fit: cover;
+        
+        
+        transition: transform .25s cubic-bezier(.22,.81,.49,1.01);
+    }
+}
+
+.project-text {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
+}
+
+.project-tags {
+    font-weight: 300;
+    letter-spacing: .5px;
+    margin: 0;
+}
+
+.project-title {
+    font-size: max(20px,1.5rem);
+    font-weight: 400;
+
+    line-height: 1.4;
+    margin-top: 0;
+
+}
+
+.project-btn {
+    color: #000;
+    display: inline-block;
+    position: relative;
+    --font-size-units-count: 0.7;
+    --letter-spacing-units-count: 0.5;
+    --margin-bottom-units-count: 3;
+    font-size: max(12px,calc(var(--font-size-units-count)*var(--unit)));
+    font-weight: 600;
+    letter-spacing: calc(var(--letter-spacing-units-count)*var(--unit));
+    margin-bottom: calc(var(--margin-bottom-units-count)*var(--unit));
+    text-transform: uppercase;
+
+
+}
+
+.project-technologies {
+    align-items: stretch;
+    display: flex;
+}

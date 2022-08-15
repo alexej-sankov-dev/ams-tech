@@ -1,0 +1,72 @@
+.logo {
+    @media (max-width: 1279px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        margin-left: calc(var(--baseline)*4);
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    @media (min-width: 1280px) {
+        grid-column: 3/4;
+        grid-row: 1/2;        
+
+        justify-self: start;
+        align-self: center;
+    }
+
+    @media (max-width: 1699px) {
+        justify-content: center;
+        grid-column: 1/2;
+    }
+
+    @media (max-width: 1300px) {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+.logo-link {
+    color: currentColor;
+    //margin: calc(var(--baseline)*2) 0;
+}
+
+.logo-icon {
+    display: flex;
+}
+
+.logo-icon svg {
+    height: 45px;
+    width: auto;
+}
+
+
+.vis-logo-s {
+    @media (min-width: 1500px) {
+        display: none;
+    }
+
+    height: 45px;
+    width: auto;
+    margin-right: 20px;
+
+    @media (max-width: 400px) {
+
+    }
+}
+
+.vis-logo-b {
+    @media (max-width: 1499px) {
+        display: none;
+    }
+}

@@ -1,0 +1,429 @@
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    @media (max-width: 550px) {
+        row-gap: 30px;
+        column-gap: 15px;
+    }
+    @media (max-width: 550px) {
+        row-gap: 10px;
+    }
+}
+
+.input-name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
+.input-company {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}
+
+.input-email {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+
+.input-phone {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+}
+
+.input-files {
+    font-family: 'CeraPro', sans-serif !important;
+    grid-column: 1/3;
+    grid-row: 7/8;
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 9/10;
+        margin-top: 25px;
+    }
+}
+
+
+.input-files-box {
+
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.54) !important;
+    padding: 10px;
+    margin-top: 5px;
+    border-color: #2e005a40 !important;
+    p {
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+        font-size: var(--text-size-small);
+    }
+}
+
+.input-files-cloud {
+    margin-top: 16px;
+    color: #888888;
+    font-size: 42px;
+}
+
+.css-10hburv-MuiTypography-root {
+    font-family: 'CeraPro', sans-serif !important;
+}
+
+.css-83ijpv-MuiTypography-root {
+    font-family: 'CeraPro', sans-serif !important;
+}
+
+.input-services {
+    grid-column: 1/3;
+    grid-row: 3/4;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        margin-top: 25px;
+    }
+    
+    .contact-form-service {
+        margin-right: 20px;
+
+        @media (max-width: 650px) {
+            margin-right: 13px;
+        }
+        @media (max-width: 550px) {
+            margin-right: 11px;
+        }
+
+        @media (max-width: 550px) {
+            margin-right: 9px;
+        }
+        
+
+        button {
+            margin-bottom: 10px;
+            font-family: 'CeraPro', sans-serif !important;
+            text-transform: none !important;
+            border-color: #2e005a40 !important;
+            color: #665f82;
+            border-radius: 25px;
+            padding: 11px 18px 11px 18px;
+            font-weight: 400;
+            //transition-duration: 0s !important;
+            transition: all 0.4s ease-in-out;
+
+
+            
+            @media (max-width: 550px) {
+                padding: 9px 16px 9px 16px;
+                font-size: 14px;
+            }
+            
+            @media (max-width: 400px) {
+                padding: 9px 16px 9px 16px;
+                font-size: 13px;
+            }
+
+            @media (max-width: 370px) {
+                padding: 7px 14px 7px 14px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.input-servcies-list {
+    margin-top: 5px;
+}
+
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+    background-color: rgba(212, 213, 249, 0.37) !important;
+    color: var(--text-color-dark) !important;
+    //font-weight: 600 !important;
+} 
+
+.input-budget {
+    grid-column: 1/3;
+    grid-row: 4/5;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 6/7;
+        margin-top: 25px;
+    }
+
+}
+
+.input-budget-inner {
+    margin-top: 5px;
+    button {
+        @media (max-width: 370px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.input-time {
+    grid-column: 1/3;
+    grid-row: 5/6;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 7/8;
+        margin-top: 25px;
+
+    }
+}
+
+.input-time-inner {
+    button {
+        @media (max-width: 370px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.input-time-inner {
+    margin-top: 5px;
+}
+
+.input-msg {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    font-family: 'CeraPro', sans-serif !important;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 8/9;
+        margin-top: 25px;
+    }
+
+}
+
+
+.contact-form-label {
+    font-family: 'CeraPro', sans-serif;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    @media (max-width: 550px) {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}
+
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--text-color-dark) !important;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+    font-family: 'CeraPro', sans-serif !important;
+    border-radius: 5px !important;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--text-color-ldark) !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: #2e005a40 !important;
+}
+
+.css-17ndd9v-MuiButtonBase-root-MuiToggleButton-root {
+    font-family: 'CeraPro', sans-serif !important;
+    border-color: #2e005a40 !important;
+    border: 1px solid #2e005a40 !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    //border-radius: 0px !important;
+    @media (min-width: 371px) and (max-width: 550px) {
+        font-size: 14px !important;
+    }
+    @media (min-width: 551px) {
+        font-size: 15px !important;
+    }
+    
+}
+
+.MuiToggleButtonGroup-root button:first-child {
+    border-bottom-left-radius: 25px !important;
+    border-top-left-radius: 25px !important;
+}
+
+.MuiToggleButtonGroup-root button:last-child {
+    border-bottom-right-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+}
+
+.css-17ndd9v-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+    background-color: rgba(212, 213, 249, 0.37) !important;
+    color: var(--text-color-dark) !important;
+    //font-weight: 600 !important;
+} 
+
+.css-17vbkzs-MuiFormControl-root-MuiTextField-root {
+    margin-top: 5px !important;
+}
+
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+    font-family: 'CeraPro', sans-serif !important;
+}
+
+.contact-form-submit {
+    grid-row: 8/9;
+    grid-column: 1/2;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 10/11;
+        margin-top: 20px;
+    }
+
+    
+    box-shadow: none;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    border: 2px solid var(--color-main);
+    background-color: var(--color-main);
+    transition-property: background-color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 100px;
+    padding: 10px 32px 10px 32px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    width: 250px;
+
+    &:hover {
+        color: var(--text-color-dark);
+        background-color: transparent;
+    }
+
+    @media (max-width: 370px) {
+        span {
+            font-size: 15px;
+        }
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 200px;
+    }
+}
+
+.vis-btn-b {
+    @media (max-width: 549px) {
+        display: none;
+    }
+}
+
+.vis-btn-s {
+    @media (min-width: 550px) {
+        display: none;
+    }
+}
+
+.contact-form-input {
+
+    @media (max-width: 550px) {
+        input {
+            padding: 12px 14px;
+            font-size: 15px;
+        }
+    }
+}
+
+.css-1wc848c-MuiFormHelperText-root.Mui-error {
+    font-family: 'CeraPro', sans-serif !important;
+}
+
+.success-text {
+    visibility: hidden;
+    grid-row: 9/10;
+    grid-column: 1/3;
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 11/12;
+    }
+}
+
+.success-text-vis {
+    visibility: visible;
+    font-size: 16px;
+    color: green;
+    font-weight: 500;
+
+    grid-row: 9/10;
+    grid-column: 1/3;
+    max-width: 500px;
+    padding: 20px 30px 20px 30px;
+    justify-self: center;
+    align-self: center;
+    background-color: #b5dfb7;
+    border: 1px solid #4caf50;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    margin-top: 40px;
+
+    @media (max-width: 650px) {
+        grid-column: 1/3;
+        grid-row: 11/12;
+        margin-top: 30px;
+        padding: 15px 25px 15px 25px;
+        max-width: 300px;
+
+    }
+}
+
+.success-text-big {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.success-text-small {
+    font-size: 15px;
+    font-weight: 400;
+    float: left;
+    margin-top: 5px;
+    color: #3f953f;
+
+    @media (max-width: 650px) {
+        font-size: 13px;
+        margin-top: 3px;
+    }
+}

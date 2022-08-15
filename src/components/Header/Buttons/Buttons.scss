@@ -1,0 +1,97 @@
+.buttons-header {
+    @media (min-width: 1280px) {
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+
+    justify-self: end;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: 1279px) {
+        display: none;
+    }
+
+    .button-wa {
+        text-decoration: none;
+        display: inline-flex;
+
+        transition-property: all;
+        transition-duration: .2s;
+        transition-timing-function: ease;
+
+        &:hover {
+            .tel-num {
+                //color: var(--text-color-orange);
+                border-bottom: 1px solid var(--text-color-dark);
+            }
+            transform: scale(1.1);
+        }
+    }
+
+    @media (max-width: 1699px) {
+        grid-column: 3/4;
+    }
+
+}
+
+.btn-wa {  
+    line-height: 0;
+    margin-right: 7px;
+    
+    img {
+        height: 27px;
+        width: auto;
+    }
+}
+
+.tel-num {
+    font-weight: 400;
+    color: var(--text-color-dark);
+    font-size: 18px;
+    margin-right: 30px;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+.contact-btn {
+    box-shadow: none;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+    
+    outline: none;
+    border: 2px solid var(--text-color-orange);
+    background-color: var(--text-color-orange);
+
+    transition-property: background-color,border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 100px;
+    padding: 10px 32px 10px 32px;
+    margin-left: 20px;
+    white-space: nowrap;
+
+    &:hover {
+        color: var(--text-color-dark);
+        background-color: transparent;
+    }
+
+    letter-spacing: 1px;
+}

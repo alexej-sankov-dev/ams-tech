@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+
+html {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-family: Sailec,Helvetica,Arial,sans-serif;
+  font-size: calc(var(--baseline)*2);
+  line-height: 1.63;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  background-color: #fff;
+
+  --baseline: 8px;
+  --grid-size: 100vw;
+
+  --animation-duration: 0.2s;
+  --transition-duration: 0.2s;
+
+  --header-height: 88px;
+  
+}
+
+@media (min-width: 768px) {
+  :root {
+    --grid-row-gap: calc(var(--baseline)*3*2);
+    --grid-column-gap: calc(var(--baseline)*3);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --grid-row-gap: calc(var(--baseline)*8);
+    --grid-column-gap: calc(var(--baseline)*4);
+  }
+}
+
+
+@media (min-width: 750px) {
+  .ol, .ul, ol, ul {
+      font-size: calc(var(--baseline)*2 + 2px);
+      line-height: 1.778;
+      margin: calc(var(--baseline)*3*1.25) 0;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.Mui-focused {
+  border-color: var(--text-color-ldark);
 }
