@@ -20,19 +20,19 @@ const Menu = (props) => {
 
     const handleClickServ = () => {
         navigate('/')
-        document.getElementById('services')?.scrollIntoView()
+        document.getElementById('services').scrollIntoView()
         props.setBurgerOpen(!props.burgerOpen)
     }
 
     const handleClickProj = () => {
         navigate('/')
-        document.getElementById('projects')?.scrollIntoView()
+        document.getElementById('projects').scrollIntoView()
         props.setBurgerOpen(!props.burgerOpen)
     }
 
     const handleClickAbout = () => {
         navigate('/')
-        document.getElementById('about')?.scrollIntoView()
+        document.getElementById('about').scrollIntoView()
         props.setBurgerOpen(!props.burgerOpen)
     }
 
