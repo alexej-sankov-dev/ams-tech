@@ -1,0 +1,96 @@
+.burger {
+    margin-right: calc(var(--baseline)*4);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-area: burger;
+    justify-content: flex-end;
+    margin: 0;
+
+    @media (min-width: 1280px) {
+        display: none;
+    }
+
+    @media (max-width: 1279px) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+}
+
+.burger-trigger {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: -webkit-gradient(linear,right top,left top,from(var(--component-color-text)),to(var(--component-color-text)));
+    background-image: linear-gradient(to left,var(--component-color-text),var(--component-color-text));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0;
+    color: var(--component-color-text);
+    cursor: pointer;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-transition: background-size var(--transition-duration) cubic-bezier(0,0,.23,1);
+    transition: background-size var(--transition-duration) cubic-bezier(0,0,.23,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
+    text-align: inherit;
+
+    position: relative;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(var(--baseline)*6);
+    justify-content: center;
+    width: calc(var(--baseline)*6);
+
+    span {
+        background-color: var(--text-color-dark);
+        display: block;
+        height: 2px;
+        left: 20%;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: all var(--transition-duration) cubic-bezier(0,0,.23,1);
+        transition: all var(--transition-duration) cubic-bezier(0,0,.23,1);
+        width: 68%;
+    }
+
+}

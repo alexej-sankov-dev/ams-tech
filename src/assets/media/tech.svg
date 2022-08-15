@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_5449_41126)">
+    <rect x="18" y="12" width="24" height="40" fill="#F9FAFF"/>
+    <g style="mix-blend-mode:multiply">
+      <rect x="13" y="47" width="24" height="5" fill="#F9FAFF"/>
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2153 1V7.76465H25.3672V1H34.7075V7.76465H38.8594V1H48.1997V14.5294H38.8594V14.5293H34.7075V14.5294H25.3672V14.5293H21.2153V14.5294H11.875V1H21.2153Z" fill="#F9FAFF"/>
+    <circle cx="30" cy="58" r="28" fill="#F9FAFF"/>
+    <circle cx="50.5" cy="26.5" r="2.5" style="fill: rgb(219, 220, 255);"/>
+    <rect x="18" y="12" width="24" height="40" style="fill: rgb(157, 157, 244);"/>
+    <g style="mix-blend-mode:multiply">
+      <rect x="13" y="47" width="24" height="5" style="fill: rgb(157, 157, 244);"/>
+    </g>
+    <g style="mix-blend-mode:multiply">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2153 1V7.76465H25.3672V1H34.7075V7.76465H38.8594V1H48.1997V14.5294H38.8594V14.5293H34.7075V14.5294H25.3672V14.5293H21.2153V14.5294H11.875V1H21.2153Z" style="fill: rgb(219, 220, 255);"/>
+    </g>
+    <g style="mix-blend-mode:multiply">
+      <circle cx="30" cy="58" r="28" style="fill: rgb(219, 220, 255);"/>
+    </g>
+    <circle cx="50.5" cy="26.5" r="2.5" style="fill: rgb(219, 220, 255);"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_5449_41126">
+      <rect width="60" height="60" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

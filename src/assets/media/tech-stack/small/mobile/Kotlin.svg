@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.168" y1="0.919" x2="0.762" y2="-0.011" gradientUnits="objectBoundingBox">
+      <stop offset="0.108" stop-color="#c757bc"/>
+      <stop offset="0.173" stop-color="#cd5ca9"/>
+      <stop offset="0.492" stop-color="#e8744f"/>
+      <stop offset="0.716" stop-color="#f88316"/>
+      <stop offset="0.823" stop-color="#ff8900"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.319" y1="1.359" x2="0.773" y2="0.456" gradientUnits="objectBoundingBox">
+      <stop offset="0.296" stop-color="#00afff"/>
+      <stop offset="0.694" stop-color="#5282ff"/>
+      <stop offset="1" stop-color="#945dff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.024" y1="0.523" x2="0.61" y2="-0.08" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Group_89255" data-name="Group 89255" transform="translate(-344 -5611)">
+    <rect id="Rectangle_3592" data-name="Rectangle 3592" width="46" height="46" rx="10" transform="translate(344 5611)" fill="#f3f9ff"/>
+    <g id="kotlin" transform="translate(357 5623)">
+      <path id="Path_282" data-name="Path 282" d="M10.733,0,0,11.287v10.09L10.717,10.64,21.377,0Z" fill="url(#linear-gradient)"/>
+      <path id="_Path_" data-name="&lt;Path&gt;" d="M0,72.957,10.717,62.221,21.377,72.957Z" transform="translate(0 -51.58)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_283" data-name="Path 283" d="M0,0H10.733L0,11.287Z" fill="url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>
