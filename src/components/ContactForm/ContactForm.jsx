@@ -43,6 +43,7 @@ const useYupValidationResolver = validationSchema =>
     },
     [validationSchema]
 );
+const phoneRegExp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
 
 
 const schema = yup.object().shape({
@@ -57,6 +58,9 @@ const schema = yup.object().shape({
         .string()
         .email("E-Mail muss ein valides Format haben")
         .required("E-Mail ist ein Pflichtfeld"),
+    phone: yup
+        .string()
+        .matches(phoneRegExp, "Tel.-Nr. muss ein valides Format haben")
 });
 
 const normalizePhoneNumber = (value) => {
@@ -79,7 +83,47 @@ const ContactForm = () => {
     });
 
     const onSubmit = (data) => {
-        console.log(data)
+      console.log(data)
+        let msg = `New Request:
+        Name: ${data.name}
+        Email: ${data.email}
+        Phonenumber: ${data.phone}
+        Company: ${data.company}
+        Budget: ${data.budget}
+        Time: ${data.time}
+        WebDev: ${data.webdev}
+        MobileDev: ${data.mobiledev}
+        UX/UI Design: ${data.design}
+        Logo & Branding: ${data.logo}
+        Ecommerce: ${data.ecom}
+        Marketing: ${data.marketing}
+        NFT & Blockchain: ${data.blockchain}
+        Other: ${data.other}
+        
+        Message: ${data.msg}`
+
+        const options = {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'User-Agent': 'Telegram Bot SDK - (https://github.com/irazasyed/telegram-bot-sdk)',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            text: msg,
+            parse_mode: 'HTML',
+            disable_web_page_preview: false,
+            disable_notification: false,
+            reply_to_message_id: null,
+            chat_id: '679257275'
+          })
+        };
+        
+        fetch('https://api.telegram.org/bot5760889777%3AAAExcvuhTdd7XTTq_OpO9IJWDxk3kA6nhrw/sendMessage', options)
+          .then(response => response.json())
+          .then(response => void(0))
+          .catch(err => void(0));
+      
         reset()
         setSelected1(false)
         setSelected2(false)
@@ -152,17 +196,15 @@ const ContactForm = () => {
               <div className='input-phone input-contact-text'>
                 <label className='contact-form-label'>Telefonnummer</label>
                 <TextField className='contact-form-input '
-                    {...register('phoneNumber')}
+                    {...register('phone')}
                     error={!!errors.phone}
                     helperText={errors?.phone?.message}
-                    name='phoneNumber'
+                    name='phone'
                     type='tel'
                     fullWidth
                     id='outlined'
                     placeholder='Ihre Tel.-Nr.'
-                    onChange={(event) => {
-                        event.target.value = normalizePhoneNumber(event.target.value);
-                    }}
+
                 />
               </div>            
               <div className='input-services'>
@@ -447,42 +489,6 @@ const ContactForm = () => {
                   placeholder='Ihre Nachricht'
                   />
               </div>
-              <Controller
-                  name='files'
-                  control={control}
-                  defaultValue={[]}
-                  render={({
-                    field: {onChange, onBlur, value, name, ref}
-                  }) => (
-                      <div className='input-files'>
-                        <label className='contact-form-label'>Möchten Sie etwas mitsenden?</label>
-                        <Dropzone  onDrop={onChange} >
-                          {({getRootProps, getInputProps}) => (
-                            <Paper
-                                variant="outlined"
-                                
-                                className='input-files-box'
-                                {...getRootProps()}
-                            >
-                              <CloudUpload className='input-files-cloud' />
-                              <input {...getInputProps()} name='files' onBlur={onBlur} />
-                              <p>Klicken Sie oder ziehen Sie Dateien in diesen Bereich zum Hochladen.</p>
-                            </Paper>
-                          )}
-                        </Dropzone>
-                        <List className='input-files-list'>
-                          {value.map(f => (
-                            <ListItem key={f.path}>
-                              <ListItemIcon>
-                                <InsertDriveFile />
-                              </ListItemIcon>
-                              <ListItemText className='input-files-list-item' primary={f.path} secondary={f.size} />
-                            </ListItem>
-                          ))}
-                        </List>
-                      </div>
-                    )}
-              />
               <button
                   type='submit'
                   className='contact-form-submit'
